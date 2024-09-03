@@ -32,6 +32,6 @@
 *.out
 *.app
 
-*WuPong/bin/Debug
+WuPong/bin
 *Debug
 *Release
