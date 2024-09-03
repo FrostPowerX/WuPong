@@ -1,4 +1,18 @@
-﻿  WuPong.vcxproj -> G:\1 año\Cuatrimestre 2\Desarrollo 1\WuPong\WuPong\bin\Debug\WuPong.exe
+﻿  SceneGamePlay.cpp
+G:\1 año\Cuatrimestre 2\Desarrollo 1\WuPong\WuPong\src\scenes\SceneGamePlay.cpp(283,110): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+G:\1 año\Cuatrimestre 2\Desarrollo 1\WuPong\WuPong\src\scenes\SceneGamePlay.cpp(283,60): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+G:\1 año\Cuatrimestre 2\Desarrollo 1\WuPong\WuPong\src\scenes\SceneGamePlay.cpp(283,28): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+G:\1 año\Cuatrimestre 2\Desarrollo 1\WuPong\WuPong\src\scenes\SceneGamePlay.cpp(284,59): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+G:\1 año\Cuatrimestre 2\Desarrollo 1\WuPong\WuPong\src\scenes\SceneGamePlay.cpp(284,38): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+G:\1 año\Cuatrimestre 2\Desarrollo 1\WuPong\WuPong\src\scenes\SceneGamePlay.cpp(284,28): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+G:\1 año\Cuatrimestre 2\Desarrollo 1\WuPong\WuPong\src\scenes\SceneGamePlay.cpp(454,113): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+G:\1 año\Cuatrimestre 2\Desarrollo 1\WuPong\WuPong\src\scenes\SceneGamePlay.cpp(454,57): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+G:\1 año\Cuatrimestre 2\Desarrollo 1\WuPong\WuPong\src\scenes\SceneGamePlay.cpp(454,44): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+G:\1 año\Cuatrimestre 2\Desarrollo 1\WuPong\WuPong\src\scenes\SceneGamePlay.cpp(455,75): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+G:\1 año\Cuatrimestre 2\Desarrollo 1\WuPong\WuPong\src\scenes\SceneGamePlay.cpp(455,54): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+G:\1 año\Cuatrimestre 2\Desarrollo 1\WuPong\WuPong\src\scenes\SceneGamePlay.cpp(455,44): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+G:\1 año\Cuatrimestre 2\Desarrollo 1\WuPong\WuPong\src\scenes\SceneGamePlay.cpp(426,9): warning C4065: la instrucción switch contiene etiquetas 'default' pero no etiquetas 'case'
+  WuPong.vcxproj -> G:\1 año\Cuatrimestre 2\Desarrollo 1\WuPong\WuPong\bin\Debug\WuPong.exe
   G:\1 año\Cuatrimestre 2\Desarrollo 1\WuPong\WuPong\resources\icon.png
   G:\1 año\Cuatrimestre 2\Desarrollo 1\WuPong\WuPong\resources\keysP1.png
   G:\1 año\Cuatrimestre 2\Desarrollo 1\WuPong\WuPong\resources\keysP2.png

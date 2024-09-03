@@ -284,9 +284,9 @@ namespace pong
 				rect.y = GetRandomValue(mapLimits.y, mapLimits.height - rect.height);
 
 				if (i < 2)
-					powerUps[i] = CreatePowerUp(rect, BLUE, 0, 0, 1);
+					powerUps[i] = CreatePowerUp(rect, GREEN, 0, 0, 1);
 				else if (i < 4)
-					powerUps[i] = CreatePowerUp(rect, RED, 0, 100, 0);
+					powerUps[i] = CreatePowerUp(rect, YELLOW, 0, 100, 0);
 				else
 					powerUps[i] = CreatePowerUp(rect, GRAY, 50, 0, 0);
 			}
