@@ -1,7 +1,5 @@
 # Prerequisites
 *.d
-*.vs
-
 
 # Compiled Object files
 *.slo
@@ -32,6 +30,6 @@
 *.out
 *.app
 
+*.vs
 WuPong/bin
-*Debug
-*Release
+WuPong/obj
