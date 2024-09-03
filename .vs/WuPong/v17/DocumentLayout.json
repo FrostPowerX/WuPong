@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "G:\\1 a\u00F1o\\Cuatrimestre 2\\Desarrollo 1\\WuPong\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{00EE2F43-30D6-46C7-82C5-36FCBAD26DBB}|WuPong.vcxproj|G:\\1 a\u00F1o\\Cuatrimestre 2\\Desarrollo 1\\WuPong\\src\\scenes\\SceneGamePlay.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{00EE2F43-30D6-46C7-82C5-36FCBAD26DBB}|WuPong.vcxproj|solutionrelative:src\\scenes\\SceneGamePlay.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00EE2F43-30D6-46C7-82C5-36FCBAD26DBB}|WuPong.vcxproj|G:\\1 a\u00F1o\\Cuatrimestre 2\\Desarrollo 1\\WuPong\\src\\entities\\PowerUp.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{00EE2F43-30D6-46C7-82C5-36FCBAD26DBB}|WuPong.vcxproj|solutionrelative:src\\entities\\PowerUp.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00EE2F43-30D6-46C7-82C5-36FCBAD26DBB}|WuPong.vcxproj|G:\\1 a\u00F1o\\Cuatrimestre 2\\Desarrollo 1\\WuPong\\src\\scenes\\SceneMenu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{00EE2F43-30D6-46C7-82C5-36FCBAD26DBB}|WuPong.vcxproj|solutionrelative:src\\scenes\\SceneMenu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00EE2F43-30D6-46C7-82C5-36FCBAD26DBB}|WuPong.vcxproj|G:\\1 a\u00F1o\\Cuatrimestre 2\\Desarrollo 1\\WuPong\\src\\PongGame.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{00EE2F43-30D6-46C7-82C5-36FCBAD26DBB}|WuPong.vcxproj|solutionrelative:src\\PongGame.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00EE2F43-30D6-46C7-82C5-36FCBAD26DBB}|WuPong.vcxproj|G:\\1 a\u00F1o\\Cuatrimestre 2\\Desarrollo 1\\WuPong\\src\\PongGame.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{00EE2F43-30D6-46C7-82C5-36FCBAD26DBB}|WuPong.vcxproj|solutionrelative:src\\PongGame.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00EE2F43-30D6-46C7-82C5-36FCBAD26DBB}|WuPong.vcxproj|G:\\1 a\u00F1o\\Cuatrimestre 2\\Desarrollo 1\\WuPong\\src\\scenes\\SceneMenu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{00EE2F43-30D6-46C7-82C5-36FCBAD26DBB}|WuPong.vcxproj|solutionrelative:src\\scenes\\SceneMenu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PowerUp.cpp",
+              "DocumentMoniker": "G:\\1 a\u00F1o\\Cuatrimestre 2\\Desarrollo 1\\WuPong\\src\\entities\\PowerUp.cpp",
+              "RelativeDocumentMoniker": "src\\entities\\PowerUp.cpp",
+              "ToolTip": "G:\\1 a\u00F1o\\Cuatrimestre 2\\Desarrollo 1\\WuPong\\src\\entities\\PowerUp.cpp",
+              "RelativeToolTip": "src\\entities\\PowerUp.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-03T21:21:31.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SceneGamePlay.cpp",
+              "DocumentMoniker": "G:\\1 a\u00F1o\\Cuatrimestre 2\\Desarrollo 1\\WuPong\\src\\scenes\\SceneGamePlay.cpp",
+              "RelativeDocumentMoniker": "src\\scenes\\SceneGamePlay.cpp",
+              "ToolTip": "G:\\1 a\u00F1o\\Cuatrimestre 2\\Desarrollo 1\\WuPong\\src\\scenes\\SceneGamePlay.cpp",
+              "RelativeToolTip": "src\\scenes\\SceneGamePlay.cpp",
+              "ViewState": "AQIAAAwBAAAAAAAAAAAAABsBAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-03T21:19:47.611Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PongGame.h",
+              "DocumentMoniker": "G:\\1 a\u00F1o\\Cuatrimestre 2\\Desarrollo 1\\WuPong\\src\\PongGame.h",
+              "RelativeDocumentMoniker": "src\\PongGame.h",
+              "ToolTip": "G:\\1 a\u00F1o\\Cuatrimestre 2\\Desarrollo 1\\WuPong\\src\\PongGame.h",
+              "RelativeToolTip": "src\\PongGame.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-03T21:17:50.378Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SceneMenu.cpp",
+              "DocumentMoniker": "G:\\1 a\u00F1o\\Cuatrimestre 2\\Desarrollo 1\\WuPong\\src\\scenes\\SceneMenu.cpp",
+              "RelativeDocumentMoniker": "src\\scenes\\SceneMenu.cpp",
+              "ToolTip": "G:\\1 a\u00F1o\\Cuatrimestre 2\\Desarrollo 1\\WuPong\\src\\scenes\\SceneMenu.cpp",
+              "RelativeToolTip": "src\\scenes\\SceneMenu.cpp",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAAAFwAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-03T21:17:38.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SceneMenu.h",
+              "DocumentMoniker": "G:\\1 a\u00F1o\\Cuatrimestre 2\\Desarrollo 1\\WuPong\\src\\scenes\\SceneMenu.h",
+              "RelativeDocumentMoniker": "src\\scenes\\SceneMenu.h",
+              "ToolTip": "G:\\1 a\u00F1o\\Cuatrimestre 2\\Desarrollo 1\\WuPong\\src\\scenes\\SceneMenu.h",
+              "RelativeToolTip": "src\\scenes\\SceneMenu.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-03T21:17:25.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PongGame.cpp",
+              "DocumentMoniker": "G:\\1 a\u00F1o\\Cuatrimestre 2\\Desarrollo 1\\WuPong\\src\\PongGame.cpp",
+              "RelativeDocumentMoniker": "src\\PongGame.cpp",
+              "ToolTip": "G:\\1 a\u00F1o\\Cuatrimestre 2\\Desarrollo 1\\WuPong\\src\\PongGame.cpp",
+              "RelativeToolTip": "src\\PongGame.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFgAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-03T21:13:00.374Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
