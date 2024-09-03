@@ -1,8 +1,7 @@
 # Prerequisites
 *.d
 *.vs
-*Debug
-*Release
+
 
 # Compiled Object files
 *.slo
@@ -32,3 +31,6 @@
 *.exe
 *.out
 *.app
+
+*Debug
+*Release
