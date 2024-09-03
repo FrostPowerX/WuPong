@@ -92,6 +92,9 @@
       <AdditionalLibraryDirectories>$(SolutionDir)libs/RayLib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>raylib.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PostBuildEvent>
+      <Command>xcopy /E /I /Y "$(ProjectDir)resources" "$(TargetDir)bin"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -111,6 +114,9 @@
       <AdditionalLibraryDirectories>$(SolutionDir)libs/RayLib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>raylib.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PostBuildEvent>
+      <Command>xcopy /E /I /Y "$(ProjectDir)resources" "$(TargetDir)bin"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -147,6 +153,7 @@
     <ClCompile Include="src\entities\PowerUp.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\PongGame.cpp" />
+    <ClCompile Include="src\scenes\SceneControls.cpp" />
     <ClCompile Include="src\scenes\SceneCredits.cpp" />
     <ClCompile Include="src\scenes\SceneGamePlay.cpp" />
     <ClCompile Include="src\scenes\SceneMenu.cpp" />
@@ -170,7 +177,6 @@
     <ClInclude Include="src\utilities\Circle.h" />
     <ClInclude Include="src\utilities\Constants.h" />
     <ClInclude Include="src\utilities\Utils.h" />
-    <ClInclude Include="src\utilities\Vector2D.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="WuPong.rc" />
