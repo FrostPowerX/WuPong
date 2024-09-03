@@ -4,6 +4,7 @@
 
 #include "scenes/SceneGamePlay.h"
 #include "scenes/SceneMenu.h"
+#include "scenes/SceneControls.h"
 #include "scenes/SceneCredits.h"
 
 #include "utilities/Constants.h"
@@ -12,6 +13,9 @@
 namespace pong
 {
 	SCENE currentScene = SCENE::MENU;
+
+	Texture2D keysP1;
+	Texture2D keysP2;
 
 	bool programLoop = true;
 	bool mutliplayer = false;
@@ -33,10 +37,6 @@ namespace pong
 	{
 		InitWindow(screenWidth, screenHeight, GameName.c_str());
 
-		icon = LoadImage("resources/icon.png");
-		ImageFormat(&icon, PIXELFORMAT_UNCOMPRESSED_R8G8B8A8);
-		SetWindowIcon(icon);
-
 		Initialize();
 
 		while (!WindowShouldClose() && programLoop)    // Detect window close button or ESC key
@@ -51,10 +51,17 @@ namespace pong
 	{
 		SetExitKey(KEY_NULL);
 
+		keysP1 = LoadTexture("resources/keysP1.png");
+		keysP2 = LoadTexture("resources/keysP2.png");
+
+		icon = LoadImage("resources/icon.png");
+		ImageFormat(&icon, PIXELFORMAT_UNCOMPRESSED_R8G8B8A8);
+		SetWindowIcon(icon);
 
 		gameplay::Init();
 		menu::Init();
 		credits::Init();
+		controls::Init();
 	}
 
 	void Input()
@@ -68,6 +75,10 @@ namespace pong
 
 		case SCENE::GAMEPLAY:
 			gameplay::Input();
+			break;
+
+		case SCENE::CONTROLS:
+			controls::Input();
 			break;
 
 		case SCENE::CREDITS:
@@ -92,6 +103,10 @@ namespace pong
 
 		case SCENE::GAMEPLAY:
 			gameplay::Update();
+			break;
+
+		case SCENE::CONTROLS:
+			controls::Update();
 			break;
 
 		case SCENE::CREDITS:
@@ -119,6 +134,10 @@ namespace pong
 			gameplay::Draw();
 			break;
 
+		case SCENE::CONTROLS:
+			controls::Draw();
+			break;
+
 		case SCENE::CREDITS:
 			credits::Draw();
 			break;
@@ -134,6 +153,8 @@ namespace pong
 	{
 		CloseWindow();
 		UnloadImage(icon);
+		UnloadTexture(keysP1);
+		UnloadTexture(keysP2);
 	}
 
 }

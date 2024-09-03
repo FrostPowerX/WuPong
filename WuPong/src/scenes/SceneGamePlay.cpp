@@ -320,6 +320,7 @@ namespace pong
 
 			if (IsKeyPressed(KEY_V))
 				RemoveBalls(1);
+
 #endif // #ifndef NDEBUG
 		}
 
