@@ -24,6 +24,8 @@ const int PalletsOffset = 10;
 const int ButtonsInMenu = 5;
 const int ButtonsInGamePlay = 3;
 
+const int TextsInGamePlay = 6;
+
 const int maxPowerUps = 6;
 
 const int OffSetSpawn = 50;

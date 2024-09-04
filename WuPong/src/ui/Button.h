@@ -13,13 +13,13 @@ struct Button
 
 	Vector2 textPosition;
 
-	Color normalColor;
-	Color onMouseTopColor;
-	Color pressedColor;
+	Color normalColor = WHITE;
+	Color onMouseTopColor = WHITE;
+	Color pressedColor = WHITE;
 
-	Color textColor;
+	Color textColor = WHITE;
 
-	int fontSize;
+	int fontSize = 0;
 
 	bool isPressed = false;
 	bool isReleased = false;

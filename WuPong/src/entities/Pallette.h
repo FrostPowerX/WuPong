@@ -9,8 +9,8 @@ struct Pallette
 	Color color = WHITE;
 	Color borderColor = WHITE;
 
-	float direction;
-	float speed;
+	float direction = 0;
+	float speed = 0;
 };
 
 Pallette CreatePallette(Vector2, Color, float width, float height, float speed);

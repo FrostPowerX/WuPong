@@ -7,7 +7,7 @@ struct PowerUp
 {
 	Rectangle rect;
 
-	Color rectColor;
+	Color rectColor = WHITE;
 
 	float addHeight = 0;
 	float addSpeed = 0;

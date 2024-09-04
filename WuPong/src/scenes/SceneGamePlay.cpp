@@ -12,6 +12,7 @@
 
 #include "..\ui\Button.h"
 #include "..\ui\Panel.h"
+#include "..\ui\Text.h"
 
 namespace pong
 {
@@ -27,12 +28,13 @@ namespace pong
 		Camera camera;
 
 		Player players[MaxPlayers];
+		Ball balls[MaxBalls];
+		PowerUp powerUps[maxPowerUps];
+
+		Button buttons[ButtonsInGamePlay];
+		Text infoText[TextsInGamePlay];
 
 		Player playerVictory;
-
-		Ball balls[MaxBalls];
-
-		PowerUp powerUps[maxPowerUps];
 
 		string scoreText;
 
@@ -40,8 +42,6 @@ namespace pong
 		Panel resultPanel;
 		Panel playerOnePanel;
 		Panel PlayerTwoPanel;
-
-		Button buttons[ButtonsInGamePlay];
 
 		Button buttonEndGame;
 
@@ -57,7 +57,7 @@ namespace pong
 		bool pauseBalls;
 		bool pvpMode;
 
-
+		bool firstScreen;
 
 		void Init()
 		{
@@ -76,6 +76,8 @@ namespace pong
 			camera.projection = CAMERA_PERSPECTIVE;
 
 			timeAccum = 0;
+
+			firstScreen = true;
 
 			InitMap();
 
@@ -103,6 +105,8 @@ namespace pong
 					if (IsKeyPressed(key))
 					{
 						pauseBalls = !pauseBalls;
+						if (firstScreen)
+							firstScreen = false;
 					}
 				}
 
@@ -235,6 +239,44 @@ namespace pong
 			}
 
 			buttonEndGame = CreateButton(buttonPos, buttonWidth, buttonHeight, "Menu", 25, GreenWu, RedWu, DarkRedWu, OpaYellowWu);
+
+			// infoTexts
+
+			infoText[0].color = DarkRedWu;
+			infoText[0].font = 25;
+			infoText[0].text = "You must score 3 goals to win";
+
+			infoText[1].color = DarkRedWu;
+			infoText[1].font = 25;
+			infoText[1].text = "You have three types of upgrades";
+
+
+			infoText[2].color = GRAY;
+			infoText[2].font = 25;
+			infoText[2].text = "Gray - Increases size";
+
+			infoText[3].color = YELLOW;
+			infoText[3].font = 25;
+			infoText[3].text = "Yellow - Increases speed";
+
+			infoText[4].color = GREEN;
+			infoText[4].font = 25;
+			infoText[4].text = "Green - Add a ball";
+
+			infoText[5].color = DarkRedWu;
+			infoText[5].font = 25;
+			infoText[5].text = "Press any key to start";
+
+			Vector2 pos;
+			pos.x = screenWidth / 2;
+			pos.y = screenHeight / TextsInGamePlay;
+
+			for (int i = 0; i < TextsInGamePlay; i++)
+			{
+				infoText[i].position.x = pos.x - (MeasureText(infoText[i].text.c_str(), infoText[i].font) / 2);
+				infoText[i].position.y = pos.y;
+				pos.y += infoText[i].font * 2;
+			}
 		}
 
 		void InitPlayers()
@@ -419,12 +461,11 @@ namespace pong
 					{
 						if (j != i && balls[j].isActive)
 							if (CheckCollision(balls[i].cir, balls[j].cir))
-								switch (SolveCollision(balls[i].cir, balls[j].cir))
-								{
-								default:
-									BouncingBalls(balls[i], balls[j]);
-									break;
-								}
+							{
+								SolveCollision(balls[i].cir, balls[j].cir);
+								BouncingBalls(balls[i], balls[j]);
+							}
+
 					}
 				}
 			}
@@ -445,8 +486,11 @@ namespace pong
 						if (balls[j].isActive)
 							if (CheckCollision(powerUps[i].rect, balls[j].cir))
 							{
-								players[balls[j].playerId].pallette.speed += powerUps[i].addSpeed;
-								players[balls[j].playerId].pallette.rect.height += powerUps[i].addHeight;
+								if (balls[j].playerId != -1)
+								{
+									players[balls[j].playerId].pallette.speed += powerUps[i].addSpeed;
+									players[balls[j].playerId].pallette.rect.height += powerUps[i].addHeight;
+								}
 
 								AddBalls(powerUps[i].addBalls);
 
@@ -511,6 +555,16 @@ namespace pong
 			DrawPanel(scorePanel);
 			DrawPanel(playerOnePanel);
 			DrawPanel(PlayerTwoPanel);
+
+			if (pauseBalls && firstScreen)
+			{
+				DrawRectangle(0, 0, screenWidth, screenHeight, { 0,0,0,200 });
+
+				for (int i = 0; i < TextsInGamePlay; i++)
+				{
+					DrawText(infoText[i]);
+				}
+			}
 
 			if (pauseGame || endGameMenu)
 			{
@@ -578,6 +632,7 @@ namespace pong
 		void RestartGame()
 		{
 			Init();
+			firstScreen = true;
 		}
 
 		void AddBalls(int cant)

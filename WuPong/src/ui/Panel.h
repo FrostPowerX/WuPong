@@ -23,8 +23,8 @@ struct Panel
 
 	int fontSizeText = 0;
 
-	Color rectColor;
-	Color textColor;
+	Color rectColor = WHITE;
+	Color textColor = WHITE;
 };
 
 Panel CreatePanel(Rectangle rect, string text, float minOffSetX, float maxOffSetX, float minOffSetY, float maxOffSetY, int fontSize, Color rectColor, Color textColor);

@@ -113,7 +113,9 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SolutionDir)libs/RayLib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>raylib.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <MidlCommandFile>mainCRTStartup</MidlCommandFile>
+      <MidlCommandFile>
+      </MidlCommandFile>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
     </Link>
     <PostBuildEvent>
       <Command>xcopy /E /I /Y "$(ProjectDir)resources" "$(TargetDir)resources"</Command>
@@ -161,6 +163,7 @@
     <ClCompile Include="src\ui\Button.cpp" />
     <ClCompile Include="src\ui\Panel.cpp" />
     <ClCompile Include="src\utilities\Utils.cpp" />
+    <ClCompile Include="src\ui\Text.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h" />
@@ -178,6 +181,7 @@
     <ClInclude Include="src\utilities\Circle.h" />
     <ClInclude Include="src\utilities\Constants.h" />
     <ClInclude Include="src\utilities\Utils.h" />
+    <ClInclude Include="src\ui\Text.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="WuPong.rc" />
