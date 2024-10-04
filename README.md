@@ -1,6 +1,6 @@
 
 ![Image]
-(https://notable.md/favicon.ico)
+(WuPong/resources/icon.png)
 
 
 # WuPong
