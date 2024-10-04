@@ -1,6 +1,6 @@
 
 ![Image]
-(WuPong/resources/icon.png)
+(https://github.com/FrostPowerX/WuPong/blob/main/WuPong/resources/icon.png)
 
 
 # WuPong
