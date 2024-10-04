@@ -1,6 +1,5 @@
 
-[Image]
-(title.jpg)
+[Image](title.jpg)
 
 
 # WuPong
