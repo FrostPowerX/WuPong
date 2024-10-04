@@ -8,14 +8,14 @@
 
 ## Credits
 ### Developer
-[__Emanuel Parajon__](https://www.linkedin.com/in/claudio-emanuel-guzmeroli-parajon-719696240/)
+[*__Emanuel Parajon__*](https://www.linkedin.com/in/claudio-emanuel-guzmeroli-parajon-719696240/)
 
 ### Special Mentions
-__Sergio Baretto__
+*__Sergio Baretto__*
 
-__Stefano Cvitanich__
+*__Stefano Cvitanich__*
 
-__and you for playing!__
+*__and you for playing!__*
 
 ## About Me
 *I'm a first year student at image campus in the videogame development technicature. And I love videogames!*
